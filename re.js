@@ -22,7 +22,7 @@ if (posthead) {
     var liElements = ulElement.getElementsByClassName('custom-item');
     for (var j = 0; j < liElements.length; j++) {
       liElements[j].style.float = 'left';
-      liElements[j].style.width = (100 / desiredLiCount) + '%'; // Maksimal jumlah elemen per baris
+      liElements[j].style.width = '33.33%'; // Maksimal jumlah elemen per baris
     }
   }
 }
