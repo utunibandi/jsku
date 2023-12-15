@@ -1,9 +1,11 @@
+// Temukan elemen <div id='posthead'></div>
 var posthead = document.getElementById('posthead');
+
+// Periksa apakah elemen ditemukan
 if (posthead) {
   var innerHTMLContent = '<ul class="custom-list">';
-  var desiredLiCount = 6;
-  var numberOfLiElements = yofanPubList.length > desiredLiCount ? yofanPubList.length : desiredLiCount;
-  for (var i = 0; i < numberOfLiElements; i++) {
+  var desiredLiCount = Math.max(6, yofanPubList.length);
+  for (var i = 0; i < desiredLiCount; i++) {
     var pubData = yofanPubList[i % yofanPubList.length].split("||");
     var url = pubData[0];
     var pubId = pubData[1];
@@ -20,7 +22,7 @@ if (posthead) {
     var liElements = ulElement.getElementsByClassName('custom-item');
     for (var j = 0; j < liElements.length; j++) {
       liElements[j].style.float = 'left';
-      liElements[j].style.width = ('33.33%'; // Maksimal jumlah elemen per baris
+      liElements[j].style.width = (100 / desiredLiCount) + '%'; // Maksimal jumlah elemen per baris
     }
   }
 }
