@@ -1,14 +1,6 @@
 var posthead = document.getElementById('posthead');
 if (posthead) {
   var innerHTMLContent = '<ul class="custom-list">';
-  const yofanPubList = [
-    "http://yo.fan/traceylogan||ca-pub-3220652376420508",
-    "http://yo.fan/bancet||ca-pub-322060076420508",
-    "http://yo.fan/ca-pub-3220659567758878",
-    "http://yo.fan/billi||ca-pub-3220652376856788",
-    "http://yo.fan/dser||ca-pub-322075676420508",
-    "http://yo.fan/hutrsa||ca-pub-322067650508765",
-  ];
   var numberOfLiElements = Math.min(yofanPubList.length, 6);
   for (var i = 0; i < numberOfLiElements; i++) {
     // Ambil data dari yofanPubList
