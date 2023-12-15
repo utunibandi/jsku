@@ -3,7 +3,6 @@ if (posthead) {
   var innerHTMLContent = '<ul class="custom-list">';
   var numberOfLiElements = Math.min(yofanPubList.length, 6);
   for (var i = 0; i < numberOfLiElements; i++) {
-    // Ambil data dari yofanPubList
     var pubData = yofanPubList[i].split("||");
     var url = pubData[0];
     var pubId = pubData[1];
